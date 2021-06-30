@@ -5,7 +5,7 @@
   "description": "This is a user registartion module using mongodb expressjs vuejs nodejs passportjs etc.",
   "author": "",
   "scripts": {
-    "build": "vue-cli-service build",
+    "build": "node build/build.js",
     "cordova-build-android": "cross-env CORDOVA_PLATFORM=android vue-cli-service cordova-build-android",
     "cordova-build-browser": "cross-env CORDOVA_PLATFORM=browser vue-cli-service cordova-build-browser",
     "cordova-build-electron": "cross-env CORDOVA_PLATFORM=electron vue-cli-service cordova-build-electron",
