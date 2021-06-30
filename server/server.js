@@ -83,12 +83,12 @@ app.use((err, req, res, next) => {
   res.status(status);
   res.send('error');
 });
-if(process.env.NODE_ENV ==='production'){
-  app.use(express.static('client/dist'))
-  app.get('*',(req, res) =>{
-    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
-  })
-}
+// if(process.env.NODE_ENV ==='production'){
+//   app.use(express.static('client/dist'))
+//   app.get('*',(req, res) =>{
+//     res.sendFile(path.resolve(__dirname, 'dist', 'index.html'))
+//   })
+// }
 app.listen(port, () => {
 
     console.log( `Express server listening on port ${port}`);
