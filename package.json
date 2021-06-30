@@ -24,7 +24,7 @@
     "cordova-serve-osx": "cross-env CORDOVA_PLATFORM=osx vue-cli-service cordova-serve-osx",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "e2e": "node test/e2e/runner.js",
-    "start": "node server/server.js\"",
+    "start": "node server/server.js",
     "test": "npm run unit && npm run e2e",
     "unit": "jest --config test/unit/jest.conf.js --coverage"
   },
