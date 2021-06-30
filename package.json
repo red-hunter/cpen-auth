@@ -22,7 +22,7 @@
     "cordova-serve-electron": "cross-env CORDOVA_PLATFORM=electron vue-cli-service cordova-serve-electron",
     "cordova-serve-ios": "cross-env CORDOVA_PLATFORM=ios vue-cli-service cordova-serve-ios",
     "cordova-serve-osx": "cross-env CORDOVA_PLATFORM=osx vue-cli-service cordova-serve-osx",
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "concurrently \"webpack-dev-server --inline --progress --config build/webpack.dev.conf.js\" \"nodemon server/server.js\"",
     "e2e": "node test/e2e/runner.js",
     "start": "node server/server.js",
     "test": "npm run unit && npm run e2e",

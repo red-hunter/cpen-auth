@@ -24,9 +24,11 @@ mongoose.connect(config.onlinedb, function(err){
   console.log('Connected to DB');
 })
 
+// app.use(cors());
+// app.options('*', cors());
 app.use(cors({
-  origin:['http://localhost:8080'],
-  credentials: true // enable set cookie
+  origin:['https://ugcpen-auth.herokuapp.com','http://localhost:8080'],
+  credentials: true // enable set cookie 
 }));
 
 app.use(logger('dev'));
