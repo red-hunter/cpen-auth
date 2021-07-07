@@ -180,7 +180,8 @@
             },
         },
         created(){
-            this.isLoged();
+            //this.isLoged();
+            this.loading=false
             
         }
     }
