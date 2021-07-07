@@ -19,17 +19,22 @@ app.use(history());
 app.use(staticFileMiddleware);
 
 
-mongoose.connect(config.onlinedb, function(err){
-  if(err) console.log(err);
-  console.log('Connected to DB');
+mongoose.connect(config.onlinedb)
+.then(() =>{
+  console.log('Successfully connected to DB'); 
+})
+.catch((error) =>{
+  console.log('Couldn\'t connect to db')
+  console.log(error);
 })
 
 // app.use(cors());
 // app.options('*', cors());
 app.use(cors({
-  origin:['https://ugcpen-auth.herokuapp.com','http://localhost:8080'],
+  origin:['http://ugcpen-auth.herokuapp.com','http://localhost:8080'],
   credentials: true // enable set cookie 
 }));
+
 
 app.use(logger('dev'));
 app.use(bodyParser.json());

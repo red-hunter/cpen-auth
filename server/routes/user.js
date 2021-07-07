@@ -81,6 +81,7 @@ module.exports = function(app, passport) {
 
                         // `req.user` contains the authenticated user.
                         //res.redirect('/profile/' + req.body.username);
+         
                     })
                     .catch(err => {
                         console.log(err);

@@ -123,7 +123,7 @@ export default {
                     alert(response.data);
                 }
                
-
+                this.$router.push('/')
             })
             .catch(e => {
                 this.errors.push(e)
