@@ -1,6 +1,7 @@
 const state = {
     user: {},
-    url: 'http://ugcpen-auth.herokuapp.com/',
+    
+    url: 'http://ugcpen-auth.herokuapp.com',
    // baseUrl: 'http://www.account.mdashikar.com'
 }
 const mutations = {
